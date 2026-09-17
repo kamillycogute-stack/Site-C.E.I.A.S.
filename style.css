@@ -1,192 +1,294 @@
-/* Estilos Globais e Cores */
+/* VARIÁVEIS DE CORES (MODO CLARO) */
 :root {
-    --azul-escuro: #0B2545;
-    --azul-claro: #134074;
-    --azul-destaque: #8DA9C4;
-    --fundo-suave: #EEF4F8;
-    --texto-escuro: #1D2A44;
-    --dourado: #FFD700;
-    --vermelho: #E63946;
+  --bg-body: #0a1128;
+  --bg-main: #f0f4f8;
+  --card-bg: #ffffff;
+  --text-color: #000000;
+  --azul-escuro: #04132e;
+  --azul-medio: #00417e;
+  --azul-brilhante: #1391d4;
+  --azul-claro: #4fdef7;
+  --dourado: #ffb703;
+  --vermelho: #ff0000;
+  --sombra: rgba(0, 0, 0, 0.15);
+}
+
+/* VARIÁVEIS DE CORES (MODO ESCURO) */
+body.dark-mode {
+  --bg-main: #0b132b;
+  --card-bg: #1c2541;
+  --text-color: #edf2f4;
+  --azul-escuro: #03071e;
+  --azul-medio: #091951;
+  --azul-brilhante: #3480d2;
+  --sombra: rgba(0, 0, 0, 0.5);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 body {
-    background-color: var(--fundo-suave);
-    color: var(--texto-escuro);
-    line-height: 1.6;
+  background-color: var(--bg-main);
+  color: var(--text-color);
+  min-height: 100vh;
 }
 
-/* Cabeçalho e Logo */
+/* BOTÃO DE TEMA */
+.theme-toggle-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: var(--azul-escuro);
+}
+
+.theme-btn {
+  background: var(--azul-brilhante);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 119, 182, 0.5);
+}
+
+.theme-btn:hover {
+  transform: scale(1.05);
+}
+
+/* CABEÇALHO */
 header {
-    background-color: var(--azul-escuro);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.logo-container {
-    margin-bottom: 10px;
+  background: linear-gradient(135deg, var(--azul-escuro), var(--azul-medio));
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px var(--sombra);
 }
 
 .estrela-principal {
-    color: var(--vermelho);
-    font-size: 28px;
-    display: block;
+  color: var(--vermelho);
+  font-size: 32px;
+  filter: drop-shadow(0 0 5px var(--vermelho));
 }
 
 .estrelas-menores {
-    color: var(--dourado);
-    font-size: 18px;
-    letter-spacing: 3px;
+  color: var(--dourado);
+  font-size: 20px;
+  letter-spacing: 5px;
+  filter: drop-shadow(0 0 5px var(--dourado));
 }
 
 .logo-coracao {
-    font-size: 36px;
-    font-weight: bold;
-    color: white;
-    margin: 5px 0;
-    font-family: cursive, sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 10px 0;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 0 10px var(--azul-claro);
 }
 
-/* Navegação Simples */
-nav {
-    background-color: var(--azul-claro);
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+header h1 {
+  font-size: 1.6rem;
+  color: var(--azul-claro);
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+/* NAVEGAÇÃO POR ABAS */
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: var(--azul-medio);
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background 0.3s;
+.tab-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid transparent;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-nav a:hover {
-    background-color: var(--azul-destaque);
-    color: var(--azul-escuro);
+.tab-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Layout Principal */
+.tab-btn.active {
+  background-color: var(--azul-brilhante);
+  color: white;
+  border-color: var(--azul-claro);
+  box-shadow: 0 0 12px var(--azul-brilhante);
+}
+
+/* CONTAINER E ABAS */
 .container {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 0 15px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-section {
-    background: white;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border-left: 6px solid var(--azul-claro);
+.tab-content {
+  display: none; /* Esconde todas por padrão */
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px var(--sombra);
+  border-top: 5px solid var(--azul-brilhante);
+  animation: fadeIn 0.4s ease-in-out;
 }
 
-/* Títulos */
-section h2 {
-    color: var(--azul-escuro);
-    margin-bottom: 15px;
-    font-size: 1.5rem;
+.tab-content.active {
+  display: block; /* Exibe apenas a aba ativa */
 }
 
-/* Mural de Avisos */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-content h2 {
+  color: var(--azul-brilhante);
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--azul-claro);
+  padding-bottom: 8px;
+}
+
+.tab-content h3 {
+  margin-top: 15px;
+  color: var(--dourado);
+}
+
+/* AVISOS */
 .aviso-card {
-    background-color: #E3F2FD;
-    border-left: 4px solid var(--azul-claro);
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 4px;
+  background: linear-gradient(90deg, rgba(0,119,182,0.1), transparent);
+  border-left: 5px solid var(--azul-brilhante);
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
 }
 
-/* Galeria de Fotos e Planta */
+/* LISTAS */
+.lista-estilizada {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.lista-estilizada li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.lista-estilizada li::before {
+  content: "🔹 ";
+}
+
+/* GALERIA DE FOTOS E PLANTA */
 .galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
 }
 
-.foto-placeholder, .planta-placeholder {
-    background-color: #D3E0EA;
-    border: 2px dashed var(--azul-claro);
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--azul-escuro);
-    border-radius: 8px;
-    padding: 10px;
+.foto-card, .planta-placeholder {
+  background-color: rgba(0, 119, 182, 0.05);
+  border: 2px dashed var(--azul-brilhante);
+  border-radius: 10px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--azul-brilhante);
+  text-align: center;
+  padding: 15px;
 }
 
 .planta-placeholder {
-    height: 300px;
-    background-color: #E8EEF5;
+  height: 320px;
 }
 
-/* Listas da Equipe e Regras */
-ul.lista-padrao {
-    margin-left: 20px;
-    margin-bottom: 15px;
-}
-
-/* Formulário de Contato e Matrícula */
+/* FORMULÁRIO DE CONTATO */
 .form-grupo {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form-grupo label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .form-grupo input, .form-grupo textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #CCC;
-    border-radius: 5px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
 }
 
-button.btn-enviar {
-    background-color: var(--azul-escuro);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
+.btn-enviar {
+  background-color: var(--azul-brilhante);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,119,182,0.3);
 }
 
-button.btn-enviar:hover {
-    background-color: var(--azul-claro);
+.btn-enviar:hover {
+  background-color: var(--azul-escuro);
 }
 
-/* Rodapé */
+/* RODAPÉ */
 footer {
-    background-color: var(--azul-escuro);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--azul-escuro);
+  color: white;
+  margin-top: 40px;
+}
+
+/* ALINHAMENTO DA LOGO NO CANTO DO CABEÇALHO */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.logo-img {
+  width: 150px; /* Ajuste a largura da logo conforme necessário */
+  height: auto;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+}
+
+.header-texto {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Ajuste para telas menores (celulares) */
+@media (max-width: 600px) {
+  .header-container {
+      flex-direction: column;
+      gap: 10px;
+  }
 }

@@ -1,150 +1,229 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C.E.I.A.S - Colégio Estadual do Campo Irmã Ambrosia Sabatovich</title>
-    <!-- Vincula o arquivo CSS separado -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C.E.I.A.S - Colégio Estadual do Campo Irmã Ambrosia Sabatovich</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- CABEÇALHO COM A LOGO -->
-    <header>
-        <div class="logo-container">
-            <span class="estrela-principal">★</span>
-            <span class="estrelas-menores">★ ★ ★ ★ ★ ★</span>
-            <div class="logo-coracao">C.E.I.A.S</div>
-        </div>
+  <!-- CONTROLE DE TEMA -->
+  <div class="theme-toggle-container">
+    <button id="btn-theme" class="theme-btn">🌙 Modo Escuro</button>
+  </div>
+
+  <!-- CABEÇALHO E LOGO -->
+  <header>
+    <div class="header-container">
+      <!-- Logo posicionada no canto -->
+      <img src="logo colegio.jpg" alt="Logo C.E.I.A.S" class="logo-img">
+
+      <div class="header-texto">
+        <div class="estrela-principal">★</div>
+        <div class="estrelas-menores">★ ★ ★ ★ ★ ★</div>
         <h1>Colégio Estadual do Campo Irmã Ambrosia Sabatovich</h1>
-    </header>
-
-    <!-- MENU DE NAVEGAÇÃO -->
-    <nav>
-        <ul>
-            <li><a href="#avisos">Avisos</a></li>
-            <li><a href="#historia">História</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-            <li><a href="#regras">Regras</a></li>
-            <li><a href="#planta">Planta da Escola</a></li>
-            <li><a href="#fotos">Fotos</a></li>
-            <li><a href="#matriculas">Matrículas</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-
-        <!-- MURAL DE AVISOS -->
-        <section id="avisos">
-            <h2>Mural de Avisos Importantes</h2>
-            <div class="aviso-card">
-                <strong>Reunião de Pais e Responsáveis:</strong> Próxima sexta-feira, às 14h no anfiteatro.
-            </div>
-            <div class="aviso-card">
-                <strong>Entrega de Trabalhos da 6ª Série:</strong> Fiquem atentos aos prazos informados pelos professores em sala!
-            </div>
-        </section>
-
-        <!-- HISTÓRIA -->
-        <section id="historia">
-            <h2>História do Colégio</h2>
-            <p>O Colégio Estadual do Campo Irmã Ambrosia Sabatovich tem suas raízes profundamente ligadas à comunidade de origem ucraniana da região. Fundado para atender com carinho e qualidade as famílias do campo, o colégio carrega a tradição e o respeito à sua história cultural. Embora tenhamos essa forte matriz histórica ucraniana em nossa identidade, a grade curricular padrão não oferta o ensino do idioma ucraniano.</p>
-        </section>
-
-        <!-- EQUIPE ESCOLAR -->
-        <section id="equipe">
-            <h2>Nossa Equipe</h2>
-            
-            <p><strong>Corpo Docente (Professores):</strong></p>
-            <ul class="lista-padrao">
-                <li>Língua Portuguesa e Literatura: Profª. Maria / Prof. João</li>
-                <li>Matemática: Prof. Carlos</li>
-                <li>História e Geografia: Profª. Ana</li>
-                <li>Ciências e Biologia: Prof. Pedro</li>
-                <li>Educação Física: Prof. Lucas</li>
-            </ul>
-
-            <p><strong>Equipe Pedagógica:</strong> Pedagoga responsável pelo acompanhamento dos alunos da 6ª série ao Ensino Médio.</p>
-            <p><strong>Secretaria Escolar:</strong> Atendimento de documentos, transferências e histórico escolar.</p>
-            <p><strong>Funcionários do Apoio:</strong> Equipe de limpeza, merenda escolar e manutenção do campo.</p>
-        </section>
-
-        <!-- REGRAS E CONDUTAS -->
-        <section id="regras">
-            <h2>Regras e Condutas da Instituição</h2>
-            <ul class="lista-padrao">
-                <li>O uso do uniforme escolar é obrigatório durante todo o período das aulas.</li>
-                <li>Respeito mútuo entre alunos, professores e funcionários é a base da nossa convivência.</li>
-                <li>Manter a limpeza das salas de aula e das áreas verdes do colégio.</li>
-                <li>Horário de chegada: Tolerância máxima de 10 minutos após o sinal.</li>
-            </ul>
-        </section>
-
-        <!-- PLANTA DA ESCOLA (RESERVADO PARA O SEU DESENHO) -->
-        <section id="planta">
-            <h2>Planta da Escola (Vista de Cima)</h2>
-            <p>Espaço reservado para o desenho do mapa da escola:</p>
-            <br>
-            <div class="planta-placeholder">
-                <!-- Substitua a tag abaixo pela sua imagem futuramente: <img src="sua-planta.jpg" alt="Planta da Escola"> -->
-                <p>[ Imagem da Planta da Escola Vista de Cima - Cole o seu desenho aqui ]</p>
-            </div>
-        </section>
-
-        <!-- GALERIA DE FOTOS -->
-        <section id="fotos">
-            <h2>Conheça Nossas Instalações</h2>
-            <div class="galeria-grid">
-                <div class="foto-placeholder">[ Foto da Fachada ]</div>
-                <div class="foto-placeholder">[ Foto das Salas ]</div>
-                <div class="foto-placeholder">[ Foto do Pátio ]</div>
-                <div class="foto-placeholder">[ Foto do Campo ]</div>
-            </div>
-        </section>
-
-        <!-- MATRÍCULAS -->
-        <section id="matriculas">
-            <h2>Informações sobre Matrículas</h2>
-            <p>Para realizar a matrícula ou rematrícula no C.E.I.A.S, os responsáveis devem comparecer à secretaria do colégio com os seguintes documentos:</p>
-            <ul class="lista-padrao">
-                <li>Certidão de Nascimento do aluno;</li>
-                <li>RG e CPF do aluno e dos responsáveis;</li>
-                <li>Comprovante de residência atualizado (talão de luz);</li>
-                <li>Histórico Escolar ou Declaração de Transferência.</li>
-            </ul>
-        </section>
-
-        <!-- CONTATO E ENDEREÇO -->
-        <section id="contato">
-            <h2>Fale Conosco e Endereço</h2>
-            <p><strong>Endereço:</strong> Área Rural / Campo - Colégio Estadual Irmã Ambrosia Sabatovich</p>
-            <p><strong>E-mail Oficial:</strong> contato@ceias.escola.br</p>
-            <br>
-            <form action="#" method="post">
-                <div class="form-grupo">
-                    <label for="nome">Seu Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-                </div>
-                <div class="form-grupo">
-                    <label for="email">Seu E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail para resposta" required>
-                </div>
-                <div class="form-grupo">
-                    <label for="mensagem">Sua Mensagem:</label>
-                    <textarea id="mensagem" rows="4" placeholder="Escreva sua dúvida ou mensagem aqui..." required></textarea>
-                </div>
-                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
-            </form>
-        </section>
-
+      </div>
     </div>
+  </header>
 
-    <!-- RODAPÉ -->
-    <footer>
-        <p>&copy; 2026 C.E.I.A.S - Colégio Estadual do Campo Irmã Ambrosia Sabatovich</p>
-        <p>Desenvolvido para nossa comunidade escolar.</p>
-    </footer>
+  <!-- NAVEGAÇÃO POR ABAS -->
+  <nav class="tabs-nav">
+    <button class="tab-btn active" onclick="openTab(event, 'avisos')">📢 Avisos</button>
+    <button class="tab-btn" onclick="openTab(event, 'historia')">📜 História</button>
+    <button class="tab-btn" onclick="openTab(event, 'equipe')">👥 Equipe</button>
+    <button class="tab-btn" onclick="openTab(event, 'regras')">📋 Regras</button>
+    <button class="tab-btn" onclick="openTab(event, 'planta')">🗺️ Planta da Escola</button>
+    <button class="tab-btn" onclick="openTab(event, 'fotos')">🖼️ Fotos</button>
+    <button class="tab-btn" onclick="openTab(event, 'matriculas')">📝 Matrículas</button>
+    <button class="tab-btn" onclick="openTab(event, 'contato')">✉️ Contato</button>
+  </nav>
 
+  <!-- CONTEÚDO DAS ABAS -->
+  <div class="container">
+
+    <!-- ABA 1: AVISOS -->
+    <section id="avisos" class="tab-content active">
+      <h2>Mural de Avisos Importantes</h2>
+      <div id="mural-conteudo">
+        <!-- Conteúdo atualizado dinamicamente via JS -->
+      </div>
+    </section>
+
+    <!-- ABA 2: HISTÓRIA -->
+    <section id="historia" class="tab-content">
+      <h2>História do Colégio</h2>
+      <p>Ana Sabatovycz nasceu em 2 de agosto de 1894 em Turynka, na Ucrânia. Em setembro de 1895, com apenas um ano de
+        idade, chegou ao Brasil com seus pais, Nicolau e Justina, e o irmão João, integrando a primeira grande leva de
+        imigrantes ucranioanos que buscavam, terras férteis no Sul do país, A família estabeleceu-se nas proximidades de
+        Prudentópolis-PR.
+
+        Irmã Ambrósia serviu em várias localidades do estados do Paraná e Santa Catarina. Em 1931, auxiliou na fundação
+        da comunidade das Irmãs na Colônia Marcelino. Conhecida pela sua dedicação irrestrita, atuou como professora,
+        catequista, enfermeira e preservou o ensino da Língua Ucraniana. Seu legado na região rendeu-lhe a homenagem no
+        nome da Colégio Estadual do Campo Irmã Ambrósia Sabatovich.
+        
+        O Colégio Estadual do Campo Irmã Ambrosia Sabatovich tem suas raízes profundamente ligadas à
+        comunidade de origem ucraniana da região. Fundado para atender com carinho e qualidade as famílias do campo, o
+        colégio carrega a tradição e o respeito à sua história cultural. Embora tenhamos essa forte matriz histórica
+        ucraniana em nossa
+        identidade, a grade curricular padrão não oferta o ensino do idioma ucraniano. </p>
+    </section>
+
+    <!-- ABA 3: EQUIPE -->
+    <section id="equipe" class="tab-content">
+      <h2>Nossa Equipe Escolar</h2>
+      <h3>Corpo Docente (Professores)</h3>
+      <ul class="lista-estilizada">
+        <li>Língua Portuguesa e Literatura: Profª. Maria / Prof. João</li>
+        <li>Matemática: Prof. Carlos</li>
+        <li>História e Geografia: Profª. Ana</li>
+        <li>Ciências e Biologia: Prof. Pedro</li>
+        <li>Educação Física: Prof. Lucas</li>
+      </ul>
+
+      <h3>Equipe Pedagógica</h3>
+      <p>Pedagoga responsável pelo acompanhamento dos alunos da 6ª série ao Ensino Médio.</p>
+
+      <h3>Secretaria Escolar</h3>
+      <p>Atendimento de documentos, transferências e histórico escolar.</p>
+
+      <h3>Equipe de Apoio</h3>
+      <p>Funcionários responsáveis pela manutenção, limpeza e merenda escolar.</p>
+    </section>
+
+    <!-- ABA 4: REGRAS -->
+    <section id="regras" class="tab-content">
+      <h2>Regras e Condutas da Instituição</h2>
+      <ul class="lista-estilizada">
+        <li>O uso do uniforme escolar é obrigatório durante todo o período das aulas.</li>
+        <li>Respeito mútuo entre alunos, professores e funcionários é a base da nossa convivência.</li>
+        <li>Manter a limpeza das salas de aula e das áreas verdes do colégio.</li>
+        <li>Horário de chegada: Tolerância máxima de 10 minutos após o sinal.</li>
+      </ul>
+    </section>
+
+    <!-- ABA 5: PLANTA DA ESCOLA -->
+    <section id="planta" class="tab-content">
+      <h2>Planta da Escola (Vista de Cima)</h2>
+      <p>Espaço reservado para o mapa que você irá desenhar:</p>
+      <div class="planta-placeholder">
+        <p>🎨 [ Imagem da Planta da Escola - Insira seu desenho aqui ]</p>
+      </div>
+    </section>
+
+    <!-- ABA 6: FOTOS -->
+    <section id="fotos" class="tab-content">
+      <h2>Conheça Nossas Instalações</h2>
+      <div class="galeria-grid">
+        <div class="foto-card">📷 Fachada da Escola</div>
+        <div class="foto-card">📷 Salas de Aula</div>
+        <div class="foto-card">📷 Pátio Principal</div>
+        <div class="foto-card">📷 Área Verde / Campo</div>
+      </div>
+    </section>
+
+    <!-- ABA 7: MATRÍCULAS -->
+    <section id="matriculas" class="tab-content">
+      <h2>Informações sobre Matrículas</h2>
+      <p>Documentos necessários para matrícula e rematrícula:</p>
+      <ul class="lista-estilizada">
+        <li>Certidão de Nascimento do aluno;</li>
+        <li>RG e CPF do aluno e dos responsáveis;</li>
+        <li>Comprovante de residência atualizado (talão de luz);</li>
+        <li>Histórico Escolar ou Declaração de Transferência.</li>
+      </ul>
+    </section>
+
+    <!-- ABA 8: CONTATO -->
+    <section id="contato" class="tab-content">
+      <h2>Fale Conosco e Endereço</h2>
+      <div class="contato-info">
+        <p>📍 <strong>Endereço:</strong> Área Rural / Campo - Colégio Estadual Irmã Ambrosia Sabatovich</p>
+        <p>✉️ <strong>E-mail Oficial:</strong> contato@ceias.escola.br</p>
+      </div>
+
+      <form action="#" method="post" class="form-contato">
+        <div class="form-grupo">
+          <label for="nome">Seu Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+        <div class="form-grupo">
+          <label for="email">Seu E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail para resposta" required>
+        </div>
+        <div class="form-grupo">
+          <label for="mensagem">Sua Mensagem:</label>
+          <textarea id="mensagem" rows="4" placeholder="Escreva sua dúvida ou recado aqui..." required></textarea>
+        </div>
+        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; 2026 C.E.I.A.S - Colégio Estadual do Campo Irmã Ambrosia Sabatovich</p>
+  </footer>
+
+  <!-- SCRIPT DAS ABAS, TEMA E AVISOS AUTOMÁTICOS -->
+  <script>
+    // 1. Função de Navegação por Abas
+    function openTab(evt, tabName) {
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => content.classList.remove('active'));
+
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      document.getElementById(tabName).classList.add('active');
+      evt.currentTarget.classList.add('active');
+    }
+
+    // 2. Alternar entre Modo Claro e Modo Escuro
+    const btnTheme = document.getElementById('btn-theme');
+    btnTheme.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        btnTheme.textContent = '☀️ Modo Claro';
+      } else {
+        btnTheme.textContent = '🌙 Modo Escuro';
+      }
+    });
+
+    // 3. Atualização Automática do Mural de Avisos (A cada 1 hora)
+    const listaDeAvisos = [
+      [
+        "<strong>Reunião de Pais e Responsáveis:</strong> Próxima sexta-feira, às 14h no anfiteatro.",
+        "<strong>Entrega de Trabalhos da 6ª Série:</strong> Fiquem atentos aos prazos informados pelos professores em sala!"
+      ],
+      [
+        "<strong>Aviso da Merenda:</strong> Cardápio especial de frutas na hora do intervalo.",
+        "<strong>Aulas de Educação Física:</strong> Trazer garrafinhas de água para os treinos no campo."
+      ],
+      [
+        "<strong>Secretaria Escolar:</strong> Prazo para entrega de documentos de rematrícula até sexta-feira.",
+        "<strong>Biblioteca:</strong> Devolução de livros emprestados na semana passada até às 16h."
+      ]
+    ];
+
+    let indiceAviso = 0;
+
+    function atualizarMural() {
+      const container = document.getElementById("mural-conteudo");
+      const avisosAtuais = listaDeAvisos[indiceAviso];
+      container.innerHTML = avisosAtuais
+        .map(texto => `<div class="aviso-card">${texto}</div>`)
+        .join("");
+      indiceAviso = (indiceAviso + 1) % listaDeAvisos.length;
+    }
+
+    atualizarMural();
+    setInterval(atualizarMural, 3600000); // 1 hora
+  </script>
 </body>
+
 </html>
