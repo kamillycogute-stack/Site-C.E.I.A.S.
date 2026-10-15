@@ -1,270 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C.E.I.A.S - Colégio Estadual do Campo Irmã Ambrosia Sabatovich</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[NOME DO COLÉGIO] - Início</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- CONTROLE DE TEMA -->
-  <div class="theme-toggle-container">
-    <button id="btn-theme" class="theme-btn">🌙 Modo Escuro</button>
-  </div>
-
-  <!-- CABEÇALHO E LOGO -->
-  <header>
-    <div class="header-container">
-      <!-- Logo posicionada no canto -->
-      <img src="logo colegio.jpg" alt="Logo C.E.I.A.S" class="logo-img">
-
-      <div class="header-texto">
-        <div class="estrela-principal">★</div>
-        <div class="estrelas-menores">★ ★ ★ ★ ★ ★</div>
-        <h1>Colégio Estadual do Campo Irmã Ambrosia Sabatovich</h1>
-      </div>
-    </div>
-  </header>
-
-  <!-- NAVEGAÇÃO POR ABAS -->
-  <nav class="tabs-nav">
-    <button class="tab-btn" onclick="openTab(event, 'historia')">📜 História</button>
-    <button class="tab-btn" onclick="openTab(event, 'equipe')">👥 Equipe</button>
-    <button class="tab-btn" onclick="openTab(event, 'regras')">📋 Regras</button>
-    <button class="tab-btn" onclick="openTab(event, 'planta')">🗺️ Planta da Escola</button>
-    <button class="tab-btn" onclick="openTab(event, 'fotos')">🖼️ Fotos</button>
-    <button class="tab-btn" onclick="openTab(event, 'matriculas')">📝 Matrículas</button>
-    <button class="tab-btn" onclick="openTab(event, 'contato')">✉️ Contato</button>
-  </nav>
-
-  <!-- CONTEÚDO DAS ABAS -->
-  <div class="container">
-
-    <!-- ABA 2: HISTÓRIA -->
-    <section id="historia" class="tab-content">
-      <h2>História do Colégio</h2>
-
-      <p style="margin-bottom: 20px;">Ana Sabatovycz nasceu em 2 de agosto de 1894 em Turynka, na Ucrânia. Em setembro
-        de 1895, com apenas um ano de idade, chegou ao Brasil com seus pais, Nicolau e Justina, e o irmão João,
-        integrando a primeira grande leva de imigrantes ucranianos que buscavam terras férteis no Sul do país. A família
-        estabeleceu-se nas proximidades de Prudentópolis-PR.</p>
-
-      <p style="margin-bottom: 20px;">Irmã Ambrósia serviu em várias localidades dos estados do Paraná e Santa Catarina.
-        Em 1931, auxiliou na fundação da comunidade das Irmãs na Colônia Marcelino. Conhecida pela sua dedicação
-        irrestrita, atuou como professora, catequista, enfermeira e preservou o ensino da Língua Ucraniana. Seu legado
-        na região rendeu-lhe a homenagem no nome do Colégio Estadual do Campo Irmã Ambrósia Sabatovich.</p>
-
-      <p style="margin-bottom: 20px;">O Colégio Estadual do Campo Irmã Ambrósia Sabatovich tem suas raízes profundamente
-        ligadas à comunidade de origem ucraniana da região. Fundado para atender com carinho e qualidade as famílias do
-        campo, o colégio carrega a tradição e o respeito à sua história cultural. Embora tenhamos essa forte matriz
-        histórica ucraniana em nossa identidade, a grade curricular padrão não oferta o ensino do idioma ucraniano.</p>
-
-      <p style="margin-bottom: 20px;">A trajetória de Irmã Ambrósia resultou em um ato de supremo sacrifício na noite de
-        28 de fevereiro de 1943, na localidade de Rio das Antas (Cruz Machado-PR). Durante um incêndio criminoso que
-        destruiu a residência das religiosas na madrugada, ela orientou as demais irmãs a se salvarem e tentou resgatar
-        seis meninas que dormiam no andar superior. Impossibilitada de descer devido ao avanço rápido das chamas que
-        consumiram as escadas, faleceu ao lado das crianças.</p>
-    </section>
-
-    <!-- ABA 3: EQUIPE -->
-    <section id="equipe" class="tab-content">
-      <h2>Nossa Equipe Escolar</h2>
-      <h3>Corpo Docente (Professores)</h3>
-      <ul class="lista-estilizada">
-        <ul>
-          <li>📐 Matemática: Prof. Adilson / Henrique / Christian / Paula</li>
-          <li>📖 Língua Portuguesa / Literatura: Susana / Geovana / Alceu / Rodrigo</li>
-          <li>🇬🇧 Língua Estrangeira (Inglês): Susana / Geovana</li>
-          <li>📜 História: Vandré</li>
-          <li>🌍 Geografia: Sidnei / Olga</li>
-          <li>🔬 Ciências: Erli / Malu</li>
-          <li>🧬 Biologia: Erli</li>
-          <li>🧪 Química: Marcos</li>
-          <li>🧲 Física: Christian</li>
-          <li>🎨 Artes: Sandra</li>
-          <li>⚽ Educação Física: Roberto / Emerson</li>
-          <li>💭 Filosofia: Maike</li>
-          <li>👥 Sociologia: Rafael</li>
-          <li>💻 Informática / Programação: Roberto</li>
-          <li>💰 Educação Financeira: Christian</li>
-          <li>🤖 Robótica e Tecnociência: Christian</li>
-          <li>🕊️ Ensino Religioso: Rafael</li>
-        </ul>
-        
-      </ul>
-
-      <h3>Equipe Pedagógica</h3>
-      <p>Pedagoga responsável pelo acompanhamento dos alunos da 6ª série ao Ensino Médio:
-        <ul>
-          <li style="margin-bottom: 2px;"> Lucimara</li>
-          <li style="margin-bottom: 2px;"> Paula</li>        
-          <li style="margin-bottom: 2px;"> Sheila</li>
-          <li style="margin-bottom: 2px;"> Adriana</li>
-        </ul>
-      </p>
-
-      <h3>Secretaria Escolar</h3>
-      <p>Atendimento de documentos, transferências e histórico escolar.</p>
-
-      <h3>Equipe de Apoio</h3>
-      <p>Funcionários responsáveis pela manutenção, limpeza e merenda escolar:
-        <li style="margin-bottom: 2px;"> Nadia</li>
-        <li style="margin-bottom: 2px;"> Marli</li>        
-        <li style="margin-bottom: 2px;"> Rubiana</li>
-        <li style="margin-bottom: 2px;"> Jaqueline</li>
-        <li style="margin-bottom: 2px;"> Fabiana </li>
-        <li style="margin-bottom: 2px;"> Ana</li>        
-      </p>
-    </section>
-
-    <!-- ABA 4: REGRAS -->
-    <section id="regras" class="tab-content">
-      <h2>Regras e Condutas da Instituição</h2>
-      <ul class="lista-estilizada">
-        <li>O uso do uniforme escolar é obrigatório durante todo o período das aulas.</li>
-        <li>Respeito mútuo entre alunos, professores e funcionários é a base da nossa convivência.</li>
-        <li>Manter a limpeza das salas de aula e das áreas verdes do colégio.</li>
-        <li>Horário de chegada: Tolerância máxima de 10 minutos após o sinal.</li>
-        <li>Proibido o uso de celular no ambiente escolar.</li>
-      </ul>
-    </section>
-
-    <!-- ABA 5: PLANTA DA ESCOLA -->
-    <section id="planta" class="tab-content">
-      <h2>Planta da Escola (Vista de Cima)</h2>
-      <p>Espaço reservado para o mapa que você irá desenhar:</p>
-      <div class="planta-placeholder">
-        <p>🎨 [ Imagem da Planta da Escola - Insira seu desenho aqui ]</p>
-      </div>
-    </section>
-
-    <!-- ABA 6: FOTOS -->
-    <section id="fotos" class="tab-content">
-      <h2>Conheça Nossas Instalações</h2>
-      <div class="galeria-grid">
-        <div class="foto-card">📷 </div>
-        <div class="foto-card">📷 Salas de Aula</div>
-        <div class="foto-card">📷 Pátio Principal</div>
-        <div class="foto-card">📷 Área Verde / Campo</div>
-      </div>
-    
-      <div class="mapa-container" style="margin-top: 20px;">
-        <h2>Nossa Localização</h2>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m16!1m11!1m3!1d3!2d-49.2413222!3d-25.750228399999997!2m2!1f0!2f90!3m2!1i1024!2i768!4f75!3m3!1m2!1s0x94dc50fe44ad957d%3A0xf4b6c60f2203ea51!2sCol%C3%A9gio%20Irm%C3%A3%20Ambr%C3%B3sia%20Sabatovich!4v1791470461399" 
-          width="100%" 
-          height="450" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
-      </div>
-    </section>
-
-    <!-- ABA 7: MATRÍCULAS -->
-    <section id="matriculas" class="tab-content">
-      <h2>Informações sobre Matrículas</h2>
-      <p>Documentos necessários para matrícula e rematrícula:</p>
-      <ul class="lista-estilizada">
-        <li>Certidão de Nascimento do aluno;</li>
-        <li>RG e CPF do aluno e dos responsáveis;</li>
-        <li>Comprovante de residência atualizado (talão de luz);</li>
-        <li>Histórico Escolar ou Declaração de Transferência.</li>
-      </ul>
-    </section>
-
-    <!-- ABA 8: CONTATO -->
-    <section id="contato" class="tab-content">
-      <h2>Fale Conosco e Endereço</h2>
-      <div class="contato-info">
-        <p>📍 <strong>Endereço:</strong> Area Rural, São José dos Pinhais - PR, 83800-000</p>
-        <p>✉️ <strong>E-mail Oficial:</strong> contato@ceias.escola.br</p>
-      </div>
-
-      <form action="#" method="post" class="form-contato">
-        <div class="form-grupo">
-          <label for="nome">Seu Nome:</label>
-          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+    <header>
+        <div class="nav-container">
+            <div class="logo-placeholder">[LOGOTIPO AQUI]</div>
+            <nav>
+                <a href="index.html" class="active">Início</a>
+                <a href="sobre.html">Nossa Missão</a>
+                <a href="diferenciais.html">Diferenciais</a>
+                <a href="estrutura.html">Estrutura</a>
+                <a href="contato.html" class="btn-cta">Matrículas / Contato</a>
+            </nav>
         </div>
-        <div class="form-grupo">
-          <label for="email">Seu E-mail:</label>
-          <input type="email" id="email" name="email" placeholder="Digite seu e-mail para resposta" required>
+    </header>
+
+    <section style="background-color: var(--gray-bg);">
+        <div class="section-container grid-2-col" style="align-items: center;">
+            <div>
+                <h1 style="font-size: 2.8rem; margin-bottom: 20px;">[TÍTULO PRINCIPAL - EX: Excelência Pedagógica e Formação Humana]</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 25px;">[SUBTÍTULO - Breve apresentação dos diferenciais e valores do colégio.]</p>
+                <a href="contato.html" class="btn-cta" style="padding: 12px 25px; font-size: 1.1rem;">[Agende uma Visita]</a>
+            </div>
+            <div class="placeholder-img" style="height: 350px;">[IMAGEM PRINCIPAL DO BANNER]</div>
         </div>
-        <div class="form-grupo">
-          <label for="mensagem">Sua Mensagem:</label>
-          <textarea id="mensagem" rows="4" placeholder="Escreva sua dúvida ou recado aqui..." required></textarea>
-        </div>
-        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
-      </form>
     </section>
 
-  </div>
+    <section>
+        <div class="section-container">
+            <h2 class="section-title">[NOSSOS NÍVEIS DE ENSINO]</h2>
+            <div class="grid-3-col">
+                <div class="card">
+                    <div class="placeholder-img">[IMAGEM ED. INFANTIL]</div>
+                    <h3>[Educação Infantil]</h3>
+                    <p>[Resumo da proposta pedagógica da Educação Infantil.]</p>
+                </div>
+                <div class="card">
+                    <div class="placeholder-img">[IMAGEM FUNDAMENTAL]</div>
+                    <h3>[Ensino Fundamental]</h3>
+                    <p>[Resumo da proposta pedagógica do Ensino Fundamental.]</p>
+                </div>
+                <div class="card">
+                    <div class="placeholder-img">[IMAGEM MÉDIO]</div>
+                    <h3>[Ensino Médio]</h3>
+                    <p>[Resumo da proposta pedagógica do Ensino Médio.]</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- RODAPÉ -->
-  <footer>
-    <p>&copy; C.E.I.A.S - Colégio Estadual do Campo Irmã Ambrosia Sabatovich</p>
-    <p>&copy; NOMES:Kamilly e Larissa</p>
-  </footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>[NOME DO COLÉGIO]</h4>
+                <p>[Endereço Completo]</p>
+            </div>
+            <div class="footer-col">
+                <h4>[LINKS RÁPIDOS]</h4>
+                >
+                <h1 style="font-size: 2.8rem; margin-bottom: 20px;">[TÍTULO PRINCIPAL - EX: Excelência Pedagógica e Formação Humana]</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 25px;">[SUBTÍTULO - Breve apresentação dos diferenciais e valores do colégio.]</p>
+                <a href="contato.html" class="btn-cta" style="padding: 12px 25px; font-size: 1.1rem;">[Agende uma Visita]</a>
+            </div>
+            <div class="placeholder-img" style="height: 350px;">[IMAGEM PRINCIPAL DO BANNER]</div>
+        </div>
+    </section>
 
-  <!-- SCRIPT DAS ABAS, TEMA E AVISOS AUTOMÁTICOS -->
-  <script>
-    // 1. Função de Navegação por Abas
-    function openTab(evt, tabName) {
-      const contents = document.querySelectorAll('.tab-content');
-      contents.forEach(content => content.classList.remove('active'));
+    <section>
+        <div class="section-container">
+            <h2 class="section-title">[NOSSOS NÍVEIS DE ENSINO]</h2>
+            <div class="grid-3-col">
+                <div class="card">
+                    <div class="placeholder-img">[IMAGEM ED. INFANTIL]</div>
+                    <h3>[Educação Infantil]</h3>
+                    <p>[Resumo da proposta pedagógica da Educação Infantil.]</p>
+                </div>
+                <div class="card">
+                    <div class="placeholder-img">[IMAGEM FUNDAMENTAL]</div>
+                    <h3>[Ensino Fundamental]</h3>
+                    <p>[Resumo da proposta pedagógica do Ensino Fundamental.]</p>
+                </div>
+                <div class="card">
+                    <div class="placeholder-img">[IMAGEM MÉDIO]</div>
+                    <h3>[Ensino Médio]</h3>
+                    <p>[Resumo da proposta pedagógica do Ensino Médio.]</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      const buttons = document.querySelectorAll('.tab-btn');
-      buttons.forEach(btn => btn.classList.remove('active'));
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>[NOME DO COLÉGIO]</h4>
+                <p>[Endereço Completo]</p>
+            </div>
+            <div class="footer-col">
+                <h4>[LINKS RÁPIDOS]</h4>
+                <a href="sobre.html">Nossa Missão</a>
+                <a href="diferenciais.html">Diferenciais</a>
+                <a href="estrutura.html">Estrutura</a>
+            </div>
+            <div class="footer-col">
+                <h4>[CONTATO]</h4>
+                <p>Tel: [00 0000-0000]</p>
+                <p>Email: [contato@colegio.com.br]</p>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 [Nome da Instituição]. Todos os direitos reservados.</div>
+    </footer>
 
-      document.getElementById(tabName).classList.add('active');
-      evt.currentTarget.classList.add('active');
-    }
-
-    // 2. Alternar entre Modo Claro e Modo Escuro
-    const btnTheme = document.getElementById('btn-theme');
-    btnTheme.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      if (document.body.classList.contains('dark-mode')) {
-        btnTheme.textContent = '☀️ Modo Claro';
-      } else {
-        btnTheme.textContent = '🌙 Modo Escuro';
-      }
-    });
-
-    // 3. Atualização Automática do Mural de Avisos (A cada 1 hora)
-    const listaDeAvisos = [
-      [
-        "<strong>Reunião de Pais e Responsáveis:</strong> Próxima sexta-feira, às 14h no anfiteatro.",
-        "<strong>Entrega de Trabalhos da 6ª Série:</strong> Fiquem atentos aos prazos informados pelos professores em sala!"
-      ],
-      [
-        "<strong>Aviso da Merenda:</strong> Cardápio especial de frutas na hora do intervalo.",
-        "<strong>Aulas de Educação Física:</strong> Trazer garrafinhas de água para os treinos no campo."
-      ],
-      [
-        "<strong>Secretaria Escolar:</strong> Prazo para entrega de documentos de rematrícula até sexta-feira.",
-        "<strong>Biblioteca:</strong> Devolução de livros emprestados na semana passada até às 16h."
-      ]
-    ];
-
-    let indiceAviso = 0;
-
-    function atualizarMural() {
-      const container = document.getElementById("mural-conteudo");
-      const avisosAtuais = listaDeAvisos[indiceAviso];
-      container.innerHTML = avisosAtuais
-        .map(texto => `<div class="aviso-card">${texto}</div>`)
-        .join("");
-      indiceAviso = (indiceAviso + 1) % listaDeAvisos.length;
-    }
-
-    atualizarMural();
-    setInterval(atualizarMural, 3600000); // 1 hora
-  </script>
 </body>
-
 </html>
+
+
+*sobre html 
+ 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[NOME DO COLÉGIO] - Nossa Missão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-placeholder">[LOGOTIPO AQUI]</div>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="sobre.html" class="active">Nossa Missão</a>
+                <a href="diferenciais.html">Diferenciais</a>
+                <a href="estrutura.html">Estrutura</a>
+                <a href="contato.html" class="btn-cta">Matrículas / Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <h1>[NOSSA MISSÃO E HISTÓRIA]</h1>
+        <p>[Conheça os valores que norteiam nossa jornada educacional]</p>
+    </div>
+
+    <section>
+        <div class="section-container">
+            <div class="grid-3-col">
+                <div class="card">
+                    <h3>[MISSÃO]</h3>
+                    <p>[Texto sobre a missão pedagógica e social da escola.]</p>
+                </div>
+                <div class="card">
+                    <h3>[VISÃO]</h3>
+                    <p>[Texto sobre os objetivos de futuro da instituição.]</p>
+                </div>
+                <div class="card">
+                    <h3>[VALORES]</h3>
+                    <p>[Texto ou lista dos principais valores cultivados.]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--gray-bg);">
+        <div class="section-container">
+            <h2 class="section-title">[NOSSA TRAJETÓRIA]</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>[ANO DE FUNDAÇÃO]</h4>
+                    <p>[Descrição sobre os primeiros anos do colégio.]</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>[ANO DE EXPANSÃO]</h4>
+                    <p>[Descrição sobre novos blocos, cursos ou conquistas.]</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>[DIAS ATUAIS]</h4>
+                    <p>[Consolidação da marca e inovação contínua.]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>[NOME DO COLÉGIO]</h4>
+                <p>[Endereço Completo]</p>
+            </div>
+            <div class="footer-col">
+                <h4>[CONTATO]</h4>
+                <p>Tel: [00 0000-0000]</p>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 [Nome da Instituição]. Todos os direitos reservados.</div>
+    </footer>
+
+</body>
+</html>
+
+                <a href="diferenciais.html">Diferenciais</a>
+                <a href="estrutura.html">Estrutura</a>
+            </div>
+            <div class="footer-col">
+                <h4>[CONTATO]</h4>
+                <p>Tel: [00 0000-0000]</p>
+                <p>Email: [contato@colegio.com.br]</p>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 [Nome da Instituição]. Todos os direitos reservados.</div>
+    </footer>
+
+</body>
+</html>
+

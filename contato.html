@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[NOME DO COLÉGIO] - Contato e Matrículas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-placeholder">[LOGOTIPO AQUI]</div>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Nossa Missão</a>
+                <a href="diferenciais.html">Diferenciais</a>
+                <a href="estrutura.html">Estrutura</a>
+                <a href="contato.html" class="btn-cta active">Matrículas / Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <h1>[FALE CONOSCO E MATRÍCULAS]</h1>
+        <p>[Agende uma visita ou tire suas dúvidas com nossa equipe de atendimento]</p>
+    </div>
+
+    <section>
+        <div class="section-container grid-2-col">
+            <!-- Form de Contato -->
+            <div class="form-card">
+                <h2>[FORMULÁRIO DE INTERESSE]</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome do Responsável*</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone / WhatsApp*</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="etapa">Etapa de Interesse</label>
+                        <select id="etapa" name="etapa">
+                            <option value="">Selecione...</option>
+                            <option value="infantil">[Educação Infantil]</option>
+                            <option value="fundamental1">[Ensino Fundamental I]</option>
+                            <option value="fundamental2">[Ensino Fundamental II]</option>
+                            <option value="medio">[Ensino Médio]</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem / Observações</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">[Enviar Solicitação]</button>
+                </form>
+            </div>
+
+            <!-- Informações Institucionais e Mapa -->
+            <div>
+                <div class="card" style="margin-bottom: 20px;">
+                    <h3>[INFORMAÇÕES DE CONTATO]</h3>
+                    <p style="margin-top: 10px;"><strong>Endereço:</strong> [Rua, Número, Bairro, Cidade - UF]</p>
+                    <p><strong>Telefone:</strong> [(00) 0000-0000]</p>
+                    <p><strong>WhatsApp:</strong> [(00) 00000-0000]</p>
+                    <p><strong>E-mail:</strong> [atendimento@colegio.com.br]</p>
+                    <p><strong>Horário de Atendimento:</strong> [Segunda a Sexta, das 07h às 18h]</p>
+                </div>
+
+                <div class="placeholder-img" style="height: 250px;">
+                    [MAPA INTERATIVO / GOOGLE MAPS EMBED]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>[NOME DO COLÉGIO]</h4>
+                <p>[Endereço Completo]</p>
+            </div>
+            <div class="footer-col">
+                <h4>[REDES SOCIAIS]</h4>
+                <a href="#">[Instagram]</a>
+                <a href="#">[Facebook]</a>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 [Nome da Instituição]. Todos os direitos reservados.</div>
+    </footer>
+
+</body>
+</html>
