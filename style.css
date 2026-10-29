@@ -2,13 +2,13 @@
     --primary-color: #2c8cf3;
     --primary-dark: #003d80;
     --secondary-color: #28a745;
-    --dark-bg: #1b2a4a;
-    --light-bg: #f8f9fa;
-    --gray-bg: #eef2f5;
-    --text-color: #333333;
-    --text-muted: #666666;
+    --dark-bg: #ffffff;
+    --light-bg: #0d1846;
+    --gray-bg: #14266e;
+    --text-color: #ffffff;
+    --text-muted: #caedff;
     --border-color: #e0e0e0;
-    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --shadow: 0 4px 15px rgb(183, 183, 183);
 }
 
 * {
@@ -25,8 +25,8 @@ body {
 }
 
 header {
-    background-color: #d9eeff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: #050a2a;
+    box-shadow: 0 2px 10px rgb(255, 255, 255);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -56,7 +56,7 @@ header {
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: #444;
+    color: #ffffff;
     font-weight: 600;
     transition: color 0.3s;
 }
@@ -93,7 +93,7 @@ nav a:hover, nav a.active {
 
 .page-banner p {
     font-size: 1.1rem;
-    color: #cbd5e1;
+    color: #b3b3b3;
 }
 
 section {
@@ -140,7 +140,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #64748b;
+    color: #000000;
     margin-bottom: 15px;
 }
 
@@ -227,7 +227,7 @@ footer {
 }
 
 .footer-col p, .footer-col a {
-    color: #94a3b8;
+    color: #000000;
     text-decoration: none;
     font-size: 0.95rem;
     display: block;
@@ -241,8 +241,8 @@ footer {
 .copyright {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #334155;
-    color: #64748b;
+    border-top: 1px solid #ffffff;
+    color: #000000;
     font-size: 0.85rem;
 }
 
